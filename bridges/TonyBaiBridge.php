@@ -45,7 +45,6 @@ class TonyBaiBridge extends BridgeAbstract
                     $next = $target->next_sibling();
 
                     while ($next) {
-                            error_log("delete");
                             $tmp = $next->next_sibling(); 
                             $next->outertext = '';
                             $next = $tmp;
