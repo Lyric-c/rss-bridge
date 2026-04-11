@@ -33,7 +33,7 @@ class TonyBaiBridge extends BridgeAbstract
             $imgTag = $content[0]->find('img');
             $imgCount = count($imgTag);
             for($i=0;$i<$imgCount;$i++) {
-                if (!str_ends_with($imgTag[$i]->src, '-rq.png')) {
+                if (!str_ends_with($imgTag[$i]->src, '-qr.png')) {
                     continue;
                 }
                 $imgTag[$i]->outertext='';
